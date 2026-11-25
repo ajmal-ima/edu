@@ -73,10 +73,10 @@
 
   function tallyText() {
     var n = tally[0] + tally[1];
-    $("#counts").textContent = n ? ("measured " + n + "×:  0 → " + tally[0] + "   1 → " + tally[1]) : "";
+    $("#counts").textContent = n ? ("measured " + n + "×:  0 → " + tally[0] + "   1 → " + tally[1]) : "no measurements yet. the bars fill as you measure.";
     var bars = $("#bars"); if (!bars) return;
-    bars.querySelector(".b0").style.width = n ? (tally[0] / n * 240) + "px" : "0";
-    bars.querySelector(".b1").style.width = n ? (tally[1] / n * 240) + "px" : "0";
+    bars.querySelector(".b0").style.width = n ? (tally[0] / n * 100) + "%" : "0";
+    bars.querySelector(".b1").style.width = n ? (tally[1] / n * 100) + "%" : "0";
   }
 
   var busy = false;
