@@ -103,9 +103,9 @@
             <button class="btn hand" data-gate="R">reset</button>
           </div>
           <p class="readout" id="counts" aria-live="polite"></p>
-          <div id="bars" aria-hidden="true" style="display:grid;gap:4px;max-width:320px">
-            <div style="display:flex;align-items:center;gap:.5rem"><span class="hand">0</span><span class="b0" style="height:12px;width:0;background:var(--c-blue);border-radius:3px;transition:width .3s"></span></div>
-            <div style="display:flex;align-items:center;gap:.5rem"><span class="hand">1</span><span class="b1" style="height:12px;width:0;background:var(--c-red);border-radius:3px;transition:width .3s"></span></div>
+          <div id="bars" class="bars" aria-hidden="true">
+            <div class="bar"><span class="hand">0</span><span class="track"><span class="fill b0" style="background:var(--c-blue)"></span></span></div>
+            <div class="bar"><span class="hand">1</span><span class="track"><span class="fill b1" style="background:var(--c-red)"></span></span></div>
           </div>
         </div>
       </div>
